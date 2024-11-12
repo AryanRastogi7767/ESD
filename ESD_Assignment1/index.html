@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Bootstrap</title>
+
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!--Font awesome!-->
+    <script src="https://kit.fontawesome.com/f4e855eb8f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <div class="container pt-3">
+
+        <div class="input-group">
+            <a class="navbar-brand" href="#"> <img alt="logo" class="me-3 me-md-5"
+                    src="img/logo.svg"></img></a> <!--LOGO!-->
+
+            <input type="text" id="input-form" class="form-control" placeholder="Search"
+                aria-label="Text input with dropdown button">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">All type</button>
+            <button title="Search" class="btn btn-primary d-none d-lg-block"><i
+                    class="fa-solid fa-magnifying-glass rounded d-none d-lg-block"></i></button>
+
+            <div class="ms-md-5 mt-2 mt-md-0">
+                <a type="button" class="btn btn-outline-primary fw-500 rounded " href="signup.html">
+                    <i class="fa-solid fa-user me-lg-2"></i>
+                    <p class="d-none d-lg-inline">Sign in</p>
+                </a>
+                <a type="button" class="btn btn-outline-primary fw-500 rounded">
+                    <i class="fa-solid fa-heart me-lg-2"></i>
+                    <p class="d-none d-lg-inline">Wishlist</p>
+                </a>
+                <a type="button" class="btn btn-outline-primary fw-500 rounded ">
+                    <i class="fa-solid fa-cart-shopping me-lg-2"></i>
+                    <p class="d-none d-lg-inline">My Cart</p>
+
+                </a>
+            </div>
+
+            <ul class="dropdown-menu  dropdown-menu-start">
+                <li><a class="dropdown-item" href="#">Best</a></li>
+                <li><a class="dropdown-item" href="#">Special</a></li>
+                <li><a class="dropdown-item" href="#">Latest</a></li>
+            </ul>
+
+        </div>
+
+    </div> <!--Container div!-->
+    <hr>
+
+
+    <!--  Navbar  -->
+    <div class="container mt-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hot offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gift boxes</a>
+                    </li>
+            </div>
+    </div>
+
+    <!-- Content --->
+    <div class="bg-primary py-5">
+        <div class="container py-5 text-light">
+            <h1 class="display-1">Best products &<br> Brands in our store</h1>
+            <p class="lead">Trendy Products, Factory Prices, Excellent Service</p>
+            <a id="shop-btn" href="#" role="button" class="btn btn-warning fs-5 text-light ">Shop
+                now</a>
+            <a href="#" role="button" class="btn btn-light text-dark fs-5  ">Learn more</a>
+        </div>
+    </div>
+
+
+    <!--   Product section   -->
+
+    <div class="py-5">
+        <div class="container">
+            <h3 class="fw-bold mb-sm-3 mb-md-5 text-center text-md-start">New products</h3>
+
+            <div class="row g-3 d-flex justify-content-evenly">
+                <div class="card" id="card-width">
+                    <img alt="Iphone 16" class="img"
+                        src="img/iphone16.jpg" width="100%"
+                        height="240px" img>
+                    <div class="card-body">
+                        <hr>
+                        <h5 class="card-title">&#8377;79,999.00</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Iphone 16</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Apple</h6>
+                        <a href="#" role="button" class="btn btn-primary card-link py-2 px-4">Add to cart</a>
+                        <a title="Add to cart" href="#" class="btn btn-outline-primary card-link"> <i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div> <!--First Card--->
+
+
+
+                <div class="card" id="card-width">
+                    <img alt="Pixel 9 pro"
+                        src="img/pixel9pro.jpg" width="100%"
+                        height="240px" img>
+
+                    <div class="card-body">
+                        <hr>
+                        <h5 class="card-title">&#8377;1,24,999.00</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Pixel 9 Pro</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Google</h6>
+
+                        <a href="#" role="button" class="btn btn-primary card-link py-2 px-4">Add to cart</a>
+                        <a title="Add to cart" href="#" class="btn btn-outline-primary card-link "> <i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div><!--  2nd card -->
+
+
+
+                <div class="card" id="card-width">
+                    <img alt="S24 Ultra"
+                        src="img/Samsungs24.webp" width="100%"
+                        height="240px" img>
+
+                    <div class="card-body">
+                        <hr>
+                        <h5 class="card-title">&#8377;1,29,999.00</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">S24 Ultra</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Samsung</h6>
+
+                        <a href="#" role="button" class="btn btn-primary card-link py-2 px-4">Add to cart</a>
+                        <a title="Add to cart" href="#" class="btn btn-outline-primary card-link "> <i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div><!--  3rd card -->
+
+
+
+                <div class="card" id="card-width">
+                    <img alt="Redmagic 9 Pro"
+                        src="img/redmagic9pro.jpg" width="100%"
+                        height="240px" img>
+
+                    <div class="card-body">
+                        <hr>
+                        <h5 class="card-title">&#8377;89,999.00</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Redmagic 9 Pro</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Redmagic</h6>
+
+                        <a href="#" role="button" class="btn btn-primary card-link py-2 px-4">Add to cart</a>
+                        <a title="Add to cart" href="#" class="btn btn-outline-primary card-link "> <i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div><!--  4th card -->
+
+
+
+
+
+                <div class="card" id="card-width">
+                    <img alt="ROG 8 Pro"
+                        src="img/rog8pro.jpg" width="100%"
+                        height="240px" img>
+
+                    <div class="card-body">
+                        <hr>
+                        <h5 class="card-title">&#8377;94,999.00</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">ROG 8 Pro</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Asus</h6>
+
+                        <a href="#" role="button" class="btn btn-primary card-link py-2 px-4">Add to cart</a>
+                        <a title="Add to cart" href="#" class="btn btn-outline-primary card-link "> <i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div><!--  5th card -->
+
+            </div><!--row and container div--->
+        </div>
+
+
+
+        <!--  New section -->
+        <div class="py-5 px-3">
+            <div class="container py-5">
+                <h3 class="fw-bold  text-center text-md-start mb-3">Why choose Us?</h3>
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-center">
+
+                        <div class="bg-white shadow-sm rounded-circle p-3">
+                            <i class="fa-solid fa-money-bill fs-1 text-primary"></i>
+                        </div>
+
+                        <div class="ms-3 mt-md-5">
+                            <h6 class="h6 fw-bold">Reasonable prices</h6>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                                eiusmor</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-center">
+
+                        <div class="bg-white shadow-sm rounded-circle p-3">
+                            <i class="fa-solid fa-star  fs-1 text-primary"></i>
+                        </div>
+
+                        <div class="ms-3 mt-md-5">
+                            <h6 class="h6 fw-bold">
+                                Best quality</h6>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                                eiusmor</p>
+                        </div>
+                    </div>
+
+
+                    <div class=" col-lg-4 col-md-6 d-flex align-items-center">
+
+                        <div class="bg-white shadow-sm rounded-circle p-3">
+                            <i class="fa-solid fa-plane  fs-1 text-primary"></i>
+                        </div>
+                        <div class="ms-3 mt-md-5">
+                            <h6 class="h6 fw-bold">Worldwide shipping</h6>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                                eiusmor</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-center">
+
+                        <div class="bg-white shadow-sm rounded-circle p-3">
+                            <i class="fa-solid fa-users  fs-1 text-primary"></i>
+                        </div>
+                        <div class="ms-3 mt-md-5">
+                            <h6 class="h6 fw-bold">Customer satisfaction</h6>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                                eiusmor</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-center">
+
+                        <div class="bg-white shadow-sm rounded-circle p-3">
+                            <i class="fa-solid fa-thumbs-up  fs-1 text-primary"></i>
+                        </div>
+                        <div class="ms-3 mt-md-5">
+                            <h6 class="h6 fw-bold">Happy customers</h6>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                                eiusmor</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-center">
+
+                        <div class="bg-white shadow-sm rounded-circle p-3">
+                            <i class="fa-solid fa-box-open fs-1 text-primary"></i>
+                        </div>
+                        <div class="ms-3 mt-md-5">
+                            <h6 class="h6 fw-bold">Thousand items</h6>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                                eiusmor</p>
+                        </div>
+                    </div>
+
+
+                </div><!--row idv--->
+
+            </div>
+        </div>  
+
+</body>
+
+</html>
