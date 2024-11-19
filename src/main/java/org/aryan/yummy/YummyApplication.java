@@ -9,4 +9,7 @@ public class YummyApplication {
         SpringApplication.run(YummyApplication.class, args);
     }
 
+    public static void main(String[] args) {
+        SpringApplication.run(YummyApplication.class, args);
+    }
 }
