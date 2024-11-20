@@ -1,7 +1,7 @@
 package org.aryan.yummy.service;
 
 import org.aryan.yummy.entity.Product;
-import org.aryan.yummy.repository.ProductRepository;
+import org.aryan.yummy.repo.ProductRepo;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,9 +9,9 @@ import java.util.List;
 @Service
 public class ProductService {
 
-    private final ProductRepository productRepository;
+    private final ProductRepo productRepository;
 
-    public ProductService(ProductRepository productRepository) {
+    public ProductService(ProductRepo productRepository) {
         this.productRepository = productRepository;
     }
 

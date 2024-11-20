@@ -1,4 +1,4 @@
-package org.aryan.yummy.repository;
+package org.aryan.yummy.repo;
 
 import org.aryan.yummy.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface ProductRepository extends JpaRepository<Product, Long> {
+public interface ProductRepo extends JpaRepository<Product, Long> {
 
     // Custom query to find top 2 products in a price range
     @Query("SELECT p FROM Product p WHERE p.price BETWEEN :minPrice AND :maxPrice ORDER BY p.price ASC")

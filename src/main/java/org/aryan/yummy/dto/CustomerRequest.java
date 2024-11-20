@@ -26,13 +26,13 @@ public record CustomerRequest(
 
     @NotNull(message = "Address should be present")
     @NotEmpty(message = "Address should be present")
-    @NotBlank(message = "Address should be present")
+    //@NotBlank(message = "Address should be present")
     @JsonProperty("addresslineone")
     String addressLine1,
 
     @NotNull(message = "Address should be present")
     @NotEmpty(message = "Address should be present")
-    @NotBlank(message = "Address should be present")
+    //@NotBlank(message = "Address should be present")
     @JsonProperty("addresslinetwo")
     String addressLine2,
 
